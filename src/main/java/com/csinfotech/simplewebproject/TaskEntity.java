@@ -1,0 +1,64 @@
+package com.csinfotech.simplewebproject;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tb_task")
+public class TaskEntity {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer id;
+	private String name;
+	private String description;
+	private Date dateCreated;
+	private Date dateUpdated;
+	public TaskEntity() {
+		
+	}
+	public TaskEntity(String name, String description, Date dateCreated, Date dateUpdated) {
+		this.name = name;
+		this.description = description;
+		this.dateCreated = dateCreated;
+		this.dateUpdated = dateUpdated;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+	public void setDateCreated(Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+	public Date getDateUpdated() {
+		return dateUpdated;
+	}
+	public void setDateUpdated(Date dateUpdated) {
+		this.dateUpdated = dateUpdated;
+	}
+	
+	
+	
+
+}
