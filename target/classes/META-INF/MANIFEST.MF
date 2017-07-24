@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: User_Web_Based_Project
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: jack21for
+Implementation-Vendor-Id: com.csinfotech.userwebbasedsystem
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/user-web-bas
+ ed-system-/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
